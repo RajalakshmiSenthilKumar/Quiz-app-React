@@ -1,0 +1,239 @@
+[
+  {
+    "name": "Science",
+    "subcategories": [
+      {
+        "name": "Physics",
+        "questions": [
+          {
+            "question": "In what continent is Indonesia?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "South America", "isCorrect": false},
+              {"id": "1", "options": "B", "answer": "Europe", "isCorrect": false},
+              {"id": "2", "options": "C", "answer": "Asia", "isCorrect": true},
+              {"id": "3", "options": "D", "answer": "India", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 2
+          },
+          {
+            "question": "Which continent has the highest population density?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Asia", "isCorrect": true},
+              {"id": "1", "options": "B", "answer": "South Africa", "isCorrect": false},
+              {"id": "2", "options": "C", "answer": "Australia", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "Antarctica", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 0
+          },
+          {
+            "question": "What is the SI unit of force?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Newton", "isCorrect": true},
+              {"id": "1", "options": "B", "answer": "Joule", "isCorrect": false},
+              {"id": "2", "options": "C", "answer": "Watt", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "Pascal", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 0
+          },
+          {
+            "question": "Which of the following is a vector quantity?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Mass", "isCorrect": false},
+              {"id": "1", "options": "B", "answer": "Speed", "isCorrect": false},
+              {"id": "2", "options": "C", "answer": "Acceleration", "isCorrect": true},
+              {"id": "3", "options": "D", "answer": "Temperature", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 2
+          },
+          {
+            "question": "What is the formula for calculating work done?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Force × Time", "isCorrect": false},
+              {"id": "1", "options": "B", "answer": "Mass × Acceleration", "isCorrect": false},
+              {"id": "2", "options": "C", "answer": "Force × Distance", "isCorrect": true},
+              {"id": "3", "options": "D", "answer": "Power × Time", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 2
+          },
+          {
+            "question": "Who developed the theory of relativity?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Isaac Newton", "isCorrect": false},
+              {"id": "1", "options": "B", "answer": "Albert Einstein", "isCorrect": true},
+              {"id": "2", "options": "C", "answer": "Galileo Galilei", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "Nikola Tesla", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 1
+          },
+          {
+            "question": "What is the speed of light in a vacuum?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "300,000 km/s", "isCorrect": true},
+              {"id": "1", "options": "B", "answer": "150,000 km/s", "isCorrect": false},
+              {"id": "2", "options": "C", "answer": "500,000 km/s", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "1,000,000 km/s", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 0
+          }
+        ]
+      },
+      {
+        "name": "Chemistry",
+        "questions": [
+          {
+            "question": "What is the atomic number of hydrogen?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "1", "isCorrect": true},
+              {"id": "1", "options": "B", "answer": "2", "isCorrect": false},
+              {"id": "2", "options": "C", "answer": "3", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "4", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 0
+          },
+          {
+            "question": "Which gas is known as the noble gas?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Oxygen", "isCorrect": false},
+              {"id": "1", "options": "B", "answer": "Helium", "isCorrect": true},
+              {"id": "2", "options": "C", "answer": "Carbon dioxide", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "Nitrogen", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 1
+          },
+          {
+            "question": "What is the chemical symbol for gold?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Ag", "isCorrect": false},
+              {"id": "1", "options": "B", "answer": "Au", "isCorrect": true},
+              {"id": "2", "options": "C", "answer": "Fe", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "Hg", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 1
+          },
+          {
+            "question": "Which element is essential for photosynthesis?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Carbon", "isCorrect": false},
+              {"id": "1", "options": "B", "answer": "Oxygen", "isCorrect": false},
+              {"id": "2", "options": "C", "answer": "Hydrogen", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "Carbon dioxide", "isCorrect": true}
+            ],
+            "correctAnswerIndex": 3
+          },
+          {
+            "question": "What is the pH of a neutral solution?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "7", "isCorrect": true},
+              {"id": "1", "options": "B", "answer": "5", "isCorrect": false},
+              {"id": "2", "options": "C", "answer": "9", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "3", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 0
+          }
+        ]
+      },
+      {
+        "name": "Biology",
+        "questions": [
+          {
+            "question": "What is the largest mammal on Earth?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Elephant", "isCorrect": false},
+              {"id": "1", "options": "B", "answer": "Blue Whale", "isCorrect": true},
+              {"id": "2", "options": "C", "answer": "Giraffe", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "Hippopotamus", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 1
+          },
+          {
+            "question": "Which gas do plants absorb from the atmosphere?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Oxygen", "isCorrect": false},
+              {"id": "1", "options": "B", "answer": "Nitrogen", "isCorrect": false},
+              {"id": "2", "options": "C", "answer": "Carbon Dioxide", "isCorrect": true},
+              {"id": "3", "options": "D", "answer": "Hydrogen", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 2
+          },
+          {
+            "question": "What is the powerhouse of the cell?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Nucleus", "isCorrect": false},
+              {"id": "1", "options": "B", "answer": "Mitochondria", "isCorrect": true},
+              {"id": "2", "options": "C", "answer": "Endoplasmic Reticulum", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "Golgi Apparatus", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 1
+          },
+          {
+            "question": "Which gas is responsible for the greenhouse effect?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Oxygen", "isCorrect": false},
+              {"id": "1", "options": "B", "answer": "Methane", "isCorrect": true},
+              {"id": "2", "options": "C", "answer": "Carbon Dioxide", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "Nitrogen", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 1
+          },
+          {
+            "question": "What is the smallest unit of life?",
+            "options": [
+              {"id": "0", "options": "A", "answer": "Cell", "isCorrect": true},
+              {"id": "1", "options": "B", "answer": "Atom", "isCorrect": false},
+              {"id": "2", "options": "C", "answer": "Molecule", "isCorrect": false},
+              {"id": "3", "options": "D", "answer": "Organism", "isCorrect": false}
+            ],
+            "correctAnswerIndex": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mathematics",
+    "subcategories": [
+      {
+        "name": "Algebra"
+      },
+      {
+        "name": "Geometry"
+      },
+      {
+        "name": "Statistics"
+      },
+      {
+        "name": "Trigonometry"
+      }
+    ]
+  },
+  {
+    "name": "History",
+    "subcategories": [
+      {
+        "name": "Ancient History"
+      },
+      {
+        "name": "Medieval History"
+      },
+      {
+        "name": "Modern History"
+      }
+     
+    ]
+  },
+  {
+    "name": "GK",
+    "subcategories": [
+      {
+        "name": "Current Affairs"
+      },
+      {
+        "name": "Sports"
+      },
+      {
+        "name": "Politics and Government"
+      }
+     
+    ]
+  }
+]
