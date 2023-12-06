@@ -25,7 +25,7 @@ const Dashboard = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Quiz Categori</Text>
+      <Text style={styles.heading}>Quiz Categories</Text>
       <ScrollView style={styles.categoryContainer}>
         {categoriesData.map((category, index) => (
           <View key={index}>

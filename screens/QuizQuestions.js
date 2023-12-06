@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Button } from 'react-native';
 
+import { useNavigation } from '@react-navigation/native';
+
 const QuizQuestions = ({ route }) => {
   const { subcategory } = route.params;
   const questions = subcategory.questions || [];
@@ -8,6 +10,8 @@ const QuizQuestions = ({ route }) => {
   const [quizStarted, setQuizStarted] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswerIndices, setSelectedAnswerIndices] = useState(Array(questions.length).fill(null));
+
+  const navigation = useNavigation(); // Get navigation object
 
   const handleAnswerSelection = (questionIndex, optionIndex) => {
     const newSelectedAnswerIndices = [...selectedAnswerIndices];
@@ -31,6 +35,11 @@ const QuizQuestions = ({ route }) => {
     setQuizStarted(true);
   };
 
+  const handleSubmit = () => {
+    // Perform actions when the quiz is submitted, e.g., calculate score
+    // You can add your logic here
+  };
+
   const renderQuestion = (item, questionIndex) => (
     <View key={questionIndex} style={styles.questionContainer}>
       <Text style={styles.questionText}>{`${questionIndex + 1}. ${item.question}`}</Text>
@@ -50,6 +59,23 @@ const QuizQuestions = ({ route }) => {
           <Text style={styles.optionText}>{`${String.fromCharCode(65 + optionIndex)}. ${option.answer}`}</Text>
         </TouchableOpacity>
       ))}
+      <View style={styles.navigationButtons}>
+        {currentQuestionIndex === 0 ? (
+          <TouchableOpacity
+            style={styles.backButton}
+            onPress={() => navigation.navigate('Dashboard')}
+          >
+            <Text style={styles.backButtonText}>Back</Text>
+          </TouchableOpacity>
+        ) : (
+          <Button title="Previous" onPress={handlePrevious} />
+        )}
+        {currentQuestionIndex === questions.length - 1 ? (
+          <Button title="Submit" onPress={handleSubmit} />
+        ) : (
+          <Button title="Next" onPress={handleNext} />
+        )}
+      </View>
     </View>
   );
 
@@ -66,16 +92,11 @@ const QuizQuestions = ({ route }) => {
         <View>
           <Text style={styles.heading}>Quiz Questions for {subcategory.name}</Text>
           {renderQuestion(questions[currentQuestionIndex], currentQuestionIndex)}
-          <View style={styles.navigationButtons}>
-            <Button title="Previous" onPress={handlePrevious} disabled={currentQuestionIndex === 0} />
-            <Button title="Next" onPress={handleNext} disabled={currentQuestionIndex === questions.length - 1} />
-          </View>
         </View>
       )}
     </ScrollView>
   );
 };
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -125,7 +146,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 16,
-    paddingHorizontal: 16, // Added padding for better spacing
+  },
+  backButton: {
+    backgroundColor: '#3498db',
+    padding: 12,
+    borderRadius: 4,
+    marginRight: 8,
+  },
+  backButtonText: {
+    fontSize: 16,
+    color: '#fff',
   },
 });
 
