@@ -5,7 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
 import Dashboard from './screens/Dashboard';
 import QuizQuestions from './screens/QuizQuestions';
-import Splash from './screens/Splash'; // Update the path
+import Splash from './screens/Splash'; 
 import userStore from './store/UserStore';
 
 const Stack = createStackNavigator();
