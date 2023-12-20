@@ -97,6 +97,7 @@ const QuizQuestions = ({ route }) => {
     </ScrollView>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

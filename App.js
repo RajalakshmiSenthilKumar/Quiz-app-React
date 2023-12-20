@@ -1,16 +1,14 @@
 // App.js
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import SplashScreen from 'react-native-splash-screen';
 import AppNavigator from './AppNavigator';
 
-class App extends Component {
-  componentDidMount() {
+const App = () => {
+  useEffect(() => {
     SplashScreen.hide();
-  }
+  }, []);
 
-  render() {
-    return <AppNavigator />;
-  }
-}
+  return <AppNavigator />;
+};
 
 export default App;
