@@ -11,6 +11,17 @@ const Dashboard = () => {
   const [selectedSubcategory, setSelectedSubcategory] = useState(null);
   const navigation = useNavigation();
 
+  const handleButtonPress = (screenName) => {
+    if (screenName === 'Scanner') {
+      navigation.navigate('Scan');
+    } else if (screenName === 'Flatlist') {
+      navigation.navigate('Flatlist'); // Make sure 'FlatlistScreen' is correctly defined in your navigator
+    } else {
+      navigation.navigate(screenName);
+    }
+  };
+  
+
   const handleCategoryPress = (category) => {
     setSelectedCategory((prevCategory) =>
       prevCategory === category ? null : category
@@ -54,9 +65,31 @@ const Dashboard = () => {
           </View>
         ))}
       </ScrollView>
+
+      {/* Separate Button for Google Vision */}
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => handleButtonPress('GoogleVision')}
+      >
+        <Text style={styles.buttonText}>Google Vision</Text>
+      </TouchableOpacity>
+
+      {/* Separate Button for Scanner */}
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => handleButtonPress('Scanner')}
+      >
+        <Text style={styles.buttonText}>Voice Recognition</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+  style={styles.button}
+  onPress={() => handleButtonPress('Flatlist')}
+>
+  <Text style={styles.buttonText}>Flatlist</Text>
+</TouchableOpacity>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -102,6 +135,18 @@ const styles = StyleSheet.create({
   subcategoryText: {
     fontSize: 16,
     color: '#fff',
+  },
+  button: {
+    backgroundColor: '#2ecc71', // Green color for the button
+    padding: 16,
+    borderRadius: 8,
+    elevation: 2, // Shadow
+    marginTop: 20,
+  },
+  buttonText: {
+    fontSize: 18,
+    color: '#fff',
+    textAlign: 'center',
   },
 });
 

@@ -1,4 +1,13 @@
 {
   "name": "QuizApp",
-  "displayName": "QuizApp"
+  "displayName": "QuizApp",
+  "plugins": [
+    [
+      "react-native-image-picker",
+      {
+        "photosPermission": "The app needs access to your photos for some awesome features!"
+      }
+    ]
+  ]
+  
 }

@@ -1,4 +1,5 @@
 // AppNavigator.js
+
 import React, { useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -7,6 +8,10 @@ import Dashboard from './screens/Dashboard';
 import QuizQuestions from './screens/QuizQuestions';
 import Splash from './screens/Splash'; 
 import userStore from './store/UserStore';
+import GoogleVision from './screens/GoogleVision';
+import UploadImage from './screens/UploadImage';
+import Scan from './screens/Scan';
+import Flatlist from './screens/Flatlist';
 
 const Stack = createStackNavigator();
 
@@ -39,6 +44,10 @@ const AppNavigator = () => {
         />
         <Stack.Screen name="Dashboard" component={Dashboard} options={{ headerShown: false }} />
         <Stack.Screen name="QuizQuestions" component={QuizQuestions} options={{ headerShown: false }} />
+        <Stack.Screen name="GoogleVision" component={GoogleVision} options={{ headerShown: false }} />
+        <Stack.Screen name="UploadImage" component={UploadImage} options={{ headerShown: false }} />
+        <Stack.Screen name="Scan" component={Scan} options={{ headerShown: false }} />
+        <Stack.Screen name="Flatlist" component={Flatlist} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
