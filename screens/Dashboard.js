@@ -1,5 +1,3 @@
-// Dashboard.js
-
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -127,7 +125,7 @@ const styles = StyleSheet.create({
     padding: 12,
     marginBottom: 4,
     borderRadius: 4,
-    elevation: 2, // Shadow
+    elevation: 2,
   },
   selectedSubcategory: {
     backgroundColor: '#4DAF7C',
@@ -137,10 +135,10 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
   button: {
-    backgroundColor: '#2ecc71', // Green color for the button
+    backgroundColor: '#2ecc71', 
     padding: 16,
     borderRadius: 8,
-    elevation: 2, // Shadow
+    elevation: 2,
     marginTop: 20,
   },
   buttonText: {
